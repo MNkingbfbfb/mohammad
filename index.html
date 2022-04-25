@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayl.css">
+    <title><a href="https://mohammad125lk"></a></title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <ul class="navigition">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tv Shows</a></li>
+            <li><a href="#">Movives</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="search">
+            <ion-icon class="mn" name="search-outline"></ion-icon>
+        </div>
+    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </header>
+    <div class="banner">
+        <img src="bg.jpg" class="bg">
+        <div class="content">
+            <img src="name.jpg" class="movietitle">
+            <h4>
+                <span>2022</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo nulla, tempora numquam autem assumenda sequi fugiat excepturi voluptatibus provident ratione quibusdam culpa quis perspiciatis mollitia ipsa nam porro at!
+            Adipisci, reiciendis soluta? Dolorum earum dicta molestiae excepturi officiis molestias quibusdam deserunt corporis iusto suscipit ipsa, odio maxime? Reprehenderit praesentium iusto molestiae, libero tenetur omnis fugit fuga impedit ab placeat.</p>
+            <div class="butptpons">
+                <a class="mn" href="#"><ion-icon name="play-outline"></ion-icon>Play</a>
+                <a href="#"><ion-icon name="add-outline"></ion-icon>My List</a>
+            </div>
+        </div>
+        <a class="play" onclick="togglevideo();"><img src="play.png" alt="">Watch Trailer</a>
+    </div>
+    <div class="trailer">
+        <video src="1.ogg" controls="true"></video>
+        <img src="close.png" class="close" onclick="togglevideo()">
+    </div>
+
+    <script>
+        function togglevideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+</html>
